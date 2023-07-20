@@ -1,3 +1,4 @@
+/** Controller */
 import Users from '../model/user';
 
 export async function getUsers(req, res) {
@@ -7,6 +8,6 @@ export async function getUsers(req, res) {
         if (!users) return res.status(404).json({ error: 'Data not Found' });
         res.status(200).json(users);
     } catch (error) {
-        res.status(404).json({ error: 'Error while Fetching Data' });
+        res.status(404).json({ error: 'Error While Fetching Data' });
     }
 }
